@@ -8,6 +8,7 @@ public class HeliController : MonoBehaviour {
 	public GameObject horna_vrtula;
 	public GameObject dolna_vrtula;
 	public float EngineForce;
+	public float MaxForce;
 	private Rigidbody rb;
 	public float RychlostVrtul
 	{
@@ -23,7 +24,7 @@ public class HeliController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		RychlostVrtul = 1000f;
+		RychlostVrtul = 0f;
 		rb = GetComponent<Rigidbody> ();
 	}
 	
