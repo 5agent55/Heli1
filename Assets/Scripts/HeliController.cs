@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,6 +29,9 @@ public class HeliController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			rb.AddForce (Vector3.up *EngineForce,ForceMode.Force);
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			rb.AddForce (Vector3.up * EngineForce, ForceMode.Force);
+	
+		}
 	}
 }
