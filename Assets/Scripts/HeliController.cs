@@ -22,8 +22,6 @@ public class HeliController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		RychlostVrtul = 500f;
-
-
 	}
 	
 	// Update is called once per frame
